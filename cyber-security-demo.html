@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Demo</title>
+</head>
+<body>
+    <h1>Data Collection Demo</h1>
+    <p>Current Date and Time (UTC): <span id="current-time"></span></p>
+    <p>Current User's Login: <span id="user-login"></span></p>
+
+    <script>
+        // Get current date and time
+        const now = new Date();
+        const formattedTime = now.toISOString().replace('T', ' ').substring(0, 19);
+        document.getElementById('current-time').innerText = formattedTime;
+
+        // Simulate collecting user's login
+        const userLogin = 'caio041210-ai';
+        document.getElementById('user-login').innerText = userLogin;
+    </script>
+</body>
+</html>
